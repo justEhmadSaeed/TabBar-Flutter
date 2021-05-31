@@ -1,4 +1,22 @@
-# tabbar_flutter
+# Flutter TabBar App
+
+The app contains the implementation of the following Widgets:
+
+- Routes
+- App Drawer
+- Drawer Header
+- Switch
+- Slider
+- DatePicker
+- CheckBox
+- DropDown Button
+- Popup Button
+- Outlined Button
+- Elevated Button
+- Radio Button
+- Icon Button
+- FloatingActionButton
+- TextField
 
 A new Flutter project.
 
