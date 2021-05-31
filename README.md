@@ -5,6 +5,10 @@ The app contains the implementation of the following Widgets:
 - Routes
 - App Drawer
 - Drawer Header
+- TabController
+- TabBar
+- Tab
+- TabBarView
 - Switch
 - Slider
 - DatePicker
