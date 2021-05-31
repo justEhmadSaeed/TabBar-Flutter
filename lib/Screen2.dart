@@ -6,28 +6,112 @@ class Screen2 extends StatelessWidget {
   static final route = '/screen2';
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Screen 2'),
-        backgroundColor: Colors.cyan[700],
-      ),
-      drawer: Drawer(
-        child: ListView(
-          padding: EdgeInsets.zero,
-          children: [
-            kDrawerHeader,
-            ListTile(
-              title: Text('5 Tabbed Screen'),
-              leading: Icon(
-                Icons.visibility,
-                color: Colors.cyan[700],
-                size: 30,
+    return DefaultTabController(
+      length: 6,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text('Screen 2'),
+          backgroundColor: Colors.cyan[700],
+          bottom: TabBar(
+            indicatorColor: Colors.white,
+            tabs: [
+              Tab(
+                child: Text('Tab 1'),
               ),
-              onTap: () {
-                Navigator.popUntil(
-                    context, ModalRoute.withName(HomePage.route));
-              },
-              dense: true,
+              Tab(
+                child: Text('Tab 2'),
+              ),
+              Tab(
+                child: Text('Tab 3'),
+              ),
+              Tab(
+                child: Text('Tab 4'),
+              ),
+              Tab(
+                child: Text('Tab 5'),
+              ),
+              Tab(
+                child: Text('Tab 6'),
+              ),
+            ],
+          ),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            padding: EdgeInsets.zero,
+            children: [
+              kDrawerHeader,
+              ListTile(
+                title: Text('5 Tabbed Screen'),
+                leading: Icon(
+                  Icons.visibility,
+                  color: Colors.cyan[700],
+                  size: 30,
+                ),
+                onTap: () {
+                  Navigator.popUntil(
+                      context, ModalRoute.withName(HomePage.route));
+                },
+                dense: true,
+              ),
+            ],
+          ),
+        ),
+        body: TabBarView(
+          children: [
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
             ),
           ],
         ),

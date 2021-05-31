@@ -14,6 +14,7 @@ class HomePage extends StatelessWidget {
           title: Text('Home'),
           backgroundColor: Colors.cyan[800],
           bottom: TabBar(
+            indicatorColor: Colors.white,
             tabs: [
               Tab(
                 child: Text('Tab 1'),
@@ -52,6 +53,55 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
+        ),
+        body: TabBarView(
+          children: [
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text('I AM AN ELEVATED BUTTON'),
+                ),
+              ),
+            ),
+          ],
         ),
       ),
     );

@@ -11,9 +11,6 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter TabBar',
-      theme: ThemeData(
-        primarySwatch: Colors.teal,
-      ),
       initialRoute: HomePage.route,
       routes: {
         HomePage.route: (context) => HomePage(),
