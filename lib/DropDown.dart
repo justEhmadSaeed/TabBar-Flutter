@@ -33,7 +33,7 @@ class _DropDownState extends State<DropDown> {
           .toList(),
       underline: Container(
         height: 3,
-        color: Colors.blue,
+        color: Colors.tealAccent,
       ),
     );
   }

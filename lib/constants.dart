@@ -5,5 +5,9 @@ final Icon kDrawerHeaderIcon = Icon(
   color: Colors.cyan[700],
   size: 30,
 );
-const kDropdownItemsStyle = TextStyle(fontSize: 18);
+const kDropdownItemsStyle = TextStyle(fontSize: 18, color: Colors.white);
 const kCheckboxListTileStyle = TextStyle(fontSize: 20);
+final kButtonStyle = ButtonStyle(
+  backgroundColor:
+      MaterialStateProperty.resolveWith((states) => Colors.tealAccent[700]),
+);

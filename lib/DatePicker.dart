@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tabbar_flutter/constants.dart';
 
 class DatePicker extends StatefulWidget {
   @override
@@ -30,7 +31,14 @@ class _DatePickerState extends State<DatePicker> {
           height: 20,
         ),
         ElevatedButton(
-          child: Text('Open Date Picker'),
+          style: kButtonStyle,
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              'Open Date Picker',
+              style: kCheckboxListTileStyle,
+            ),
+          ),
           onPressed: () => _selectDate(context),
         ),
       ],

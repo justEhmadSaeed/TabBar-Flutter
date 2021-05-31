@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage>
     return Scaffold(
       appBar: AppBar(
         title: Text('Home'),
-        backgroundColor: Colors.cyan[800],
+        backgroundColor: Colors.cyan[700],
         bottom: TabBar(
           controller: _tabController,
           indicatorColor: Colors.white,
@@ -89,6 +89,7 @@ class _HomePageState extends State<HomePage>
           ),
           Center(
             child: ElevatedButton(
+              style: kButtonStyle,
               onPressed: () {},
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
@@ -107,7 +108,7 @@ class _HomePageState extends State<HomePage>
           ),
           Center(
             child: IconButton(
-              color: Colors.blue,
+              color: Colors.tealAccent,
               iconSize: 40,
               onPressed: () {},
               icon: Icon(Icons.accessible),
