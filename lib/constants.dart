@@ -6,3 +6,4 @@ final Icon kDrawerHeaderIcon = Icon(
   size: 30,
 );
 const kDropdownItemsStyle = TextStyle(fontSize: 18);
+const kCheckboxListTileStyle = TextStyle(fontSize: 20);
