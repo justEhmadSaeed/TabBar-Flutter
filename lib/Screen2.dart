@@ -4,6 +4,7 @@ import 'package:tabbar_flutter/DatePicker.dart';
 import 'package:tabbar_flutter/DrawerHeader.dart';
 import 'package:tabbar_flutter/HomePage.dart';
 import 'package:tabbar_flutter/RadioList.dart';
+import 'package:tabbar_flutter/SwitchButton.dart';
 import 'package:tabbar_flutter/constants.dart';
 
 class Screen2 extends StatefulWidget {
@@ -96,15 +97,7 @@ class _Screen2State extends State<Screen2> with SingleTickerProviderStateMixin {
           ),
           Center(child: DatePicker()),
           Center(child: RadioList()),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {},
-              child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                child: Text('I AM AN ELEVATED BUTTON'),
-              ),
-            ),
-          ),
+          Center(child: SwitchButton()),
           Center(
             child: ElevatedButton(
               onPressed: () {},
