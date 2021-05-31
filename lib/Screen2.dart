@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tabbar_flutter/DrawerHeader.dart';
 import 'package:tabbar_flutter/HomePage.dart';
+import 'package:tabbar_flutter/constants.dart';
 
 class Screen2 extends StatelessWidget {
   static final route = '/screen2';
@@ -43,11 +44,7 @@ class Screen2 extends StatelessWidget {
               kDrawerHeader,
               ListTile(
                 title: Text('5 Tabbed Screen'),
-                leading: Icon(
-                  Icons.visibility,
-                  color: Colors.cyan[700],
-                  size: 30,
-                ),
+                leading: kDrawerHeaderIcon,
                 onTap: () {
                   Navigator.popUntil(
                       context, ModalRoute.withName(HomePage.route));
