@@ -34,23 +34,24 @@ class _HomePageState extends State<HomePage>
         title: Text('Home'),
         backgroundColor: Colors.cyan[700],
         bottom: TabBar(
+          isScrollable: true,
           controller: _tabController,
           indicatorColor: Colors.white,
           tabs: [
             Tab(
-              child: Text('Tab 1'),
+              text: 'Dropdown',
             ),
             Tab(
-              child: Text('Tab 2'),
+              text: 'Elevated Button',
             ),
             Tab(
-              child: Text('Tab 3'),
+              text: 'Floating Action Button',
             ),
             Tab(
-              child: Text('Tab 4'),
+              text: 'Icon Button',
             ),
             Tab(
-              child: Text('Tab 5'),
+              text: 'Pop-up Button',
             ),
           ],
         ),
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage>
           children: [
             kDrawerHeader,
             ListTile(
-              title: Text('6 Tabbed Screen'),
+              title: Text('Input & Selections'),
               leading: kDrawerHeaderIcon,
               onTap: () {
                 Navigator.pushNamed(context, Screen2.route);
@@ -90,7 +91,10 @@ class _HomePageState extends State<HomePage>
           Center(
             child: ElevatedButton(
               style: kButtonStyle,
-              onPressed: () {},
+              onPressed: () {
+                ScaffoldMessenger.of(context)
+                    .showSnackBar(SnackBar(content: Text('Elevated Button')));
+              },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Text('I AM AN ELEVATED BUTTON'),
@@ -99,7 +103,10 @@ class _HomePageState extends State<HomePage>
           ),
           Center(
             child: FloatingActionButton(
-              onPressed: () {},
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Floating Action Button')));
+              },
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Icon(Icons.add),
@@ -110,7 +117,10 @@ class _HomePageState extends State<HomePage>
             child: IconButton(
               color: Colors.tealAccent,
               iconSize: 40,
-              onPressed: () {},
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text('Icon Button Pressed.')));
+              },
               icon: Icon(Icons.accessible),
             ),
           ),

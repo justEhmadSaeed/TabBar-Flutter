@@ -21,6 +21,7 @@ The app contains the implementation of the following Widgets:
 - Icon Button
 - FloatingActionButton
 - TextField
+- SnackBar
 
 A new Flutter project.
 

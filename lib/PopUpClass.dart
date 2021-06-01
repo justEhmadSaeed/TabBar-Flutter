@@ -7,7 +7,13 @@ class PopUpClass extends StatefulWidget {
   _PopUpClassState createState() => _PopUpClassState();
 }
 
-const items = ['Tab 1', 'Tab 2', 'Tab 3', 'Tab 4', 'Tab 5'];
+const items = [
+  'Dropdown',
+  'Elevated Button',
+  'Floating Action Button',
+  'Icon Button',
+  'Pop-up Button'
+];
 
 class _PopUpClassState extends State<PopUpClass> {
   String popupValue = items[4];

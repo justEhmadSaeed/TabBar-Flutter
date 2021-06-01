@@ -34,29 +34,30 @@ class _Screen2State extends State<Screen2> with SingleTickerProviderStateMixin {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Screen 2'),
+        title: Text('Input & Selections'),
         backgroundColor: Colors.cyan[700],
         bottom: TabBar(
+          isScrollable: true,
           controller: _tabController,
           indicatorColor: Colors.white,
           tabs: [
             Tab(
-              child: Text('Tab 1'),
+              text: 'Checkboxes',
             ),
             Tab(
-              child: Text('Tab 2'),
+              text: 'DatePicker',
             ),
             Tab(
-              child: Text('Tab 3'),
+              text: 'Radio Buttons',
             ),
             Tab(
-              child: Text('Tab 4'),
+              text: 'Switch',
             ),
             Tab(
-              child: Text('Tab 5'),
+              text: 'Slider',
             ),
             Tab(
-              child: Text('Tab 6'),
+              text: 'TextField',
             ),
           ],
         ),
@@ -67,7 +68,7 @@ class _Screen2State extends State<Screen2> with SingleTickerProviderStateMixin {
           children: [
             kDrawerHeader,
             ListTile(
-              title: Text('5 Tabbed Screen'),
+              title: Text('Buttons'),
               leading: kDrawerHeaderIcon,
               onTap: () {
                 Navigator.popUntil(
